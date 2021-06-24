@@ -51,10 +51,10 @@ Calculator
 /*--------------------
 screen
 --------------------*/
-.screen {
+#screen {
   background: #fff;
   padding: 15px 28px;
-  height: 69px;
+  height: 70px;
   text-align: right;
   font-size: 29px;
   color: #4c455a;
@@ -64,7 +64,7 @@ screen
   box-shadow: 0 2px 3px #d8724a;
   transition: color .6s ease-in-out;
 }
-.screen::after {
+#screen::after {
   content: '';
   display: table;
   clear: both;

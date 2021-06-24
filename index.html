@@ -17,28 +17,28 @@
 <body>
 
     <div class="calculator">
-        <div class="screen">15x3</div>
+        <div id="screen" ></div>
         <div class="buttons">
             <div class="numbers">
-                <button id="nove" data-val="9">9</button>
-                <button id="oito" data-val="8">8</button>
-                <button id="sete" data-val="7">7</button>
-                <button id="seis" data-val="6">6</button>
-                <button id="cinco" data-val="5">5</button>
-                <button id="quatro" data-val="4">4</button>
-                <button id="tres" data-val="3">3</button>
-                <button id="dois" data-val="2">2</button>
-                <button id="um" data-val="1">1</button>
-                <button id="limpar" data-val="clear">C</button>
-                <button id="ponto" data-val=".">.</button>
-                <button id="zero" data-val="0" href="0">0</button>
+                <button id="nove" onclick="insert('9')">9</button>
+                <button id="oito" onclick="insert('8')">8</button>
+                <button id="sete" onclick="insert('7')">7</button>
+                <button id="seis" onclick="insert('6')">6</button>
+                <button id="cinco" onclick="insert('5')">5</button>
+                <button id="quatro" onclick="insert('4')">4</button>
+                <button id="tres" onclick="insert('3')">3</button>
+                <button id="dois" onclick="insert('2')">2</button>
+                <button id="um" onclick="insert('1')">1</button>
+                <button id="clear" onclick="clean()">Apagar</button>
+                <button id="ponto" onclick="insert('.')">.</button>
+                <button id="zero" onclick="insert('0')" href="0">0</button>
             </div>
             <div class="operators">
-                <button id="divisao" data-val="÷">÷</button>
-                <button id="multiplicacao" data-val="x">x</button>
-                <button id="subtracao" data-val="-">-</button>
-                <button id="adicao" data-val="+">+</button>
-                <button id="igual" data-val="=">=</button>
+                <button id="divisao" onclick="insert('/')">÷</button>
+                <button id="multiplicacao" onclick="insert('*')">x</button>
+                <button id="subtracao" onclick="insert('-')">-</button>
+                <button id="adicao" onclick="insert('+')">+</button>
+                <button id="igual" onclick="calcular()">=</button>
             </div>
         </div>
     </div>
